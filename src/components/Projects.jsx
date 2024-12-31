@@ -6,13 +6,15 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import twoTreesBanner from "../assets/img/two-trees-banner.png";
 import "animate.css";
 
 import api from "../assets/img/stack/api.png";
 import css from "../assets/img/stack/css.png";
+import docker from "../assets/img/stack/docker.png";
 import figma from "../assets/img/stack/figma.png";
 import firebase from "../assets/img/stack/firebase.png";
-import flare from "../assets/img/stack/flare.png";
+// import flare from "../assets/img/stack/flare.png";
 import git from "../assets/img/stack/git.png";
 import htmlicon from "../assets/img/stack/htmlicon.png";
 import javascript from "../assets/img/stack/javascript.png";
@@ -28,7 +30,10 @@ import shopify from "../assets/img/stack/shopify.png";
 import tailwind from "../assets/img/stack/tailwind.png";
 import typescript from "../assets/img/stack/typescript.png";
 import vscode from "../assets/img/stack/vscode.png";
-import xml from "../assets/img/stack/xml.png";
+import wordpress from "../assets/img/stack/wordpress.png";
+// import xml from "../assets/img/stack/xml.png";
+
+// Add section for most recent project
 
 export const Projects = () => {
   const projects = [
@@ -80,11 +85,32 @@ export const Projects = () => {
 
   return (
     <section className="projects" id="projects">
+      <div className="recent">
+        <h2>
+          Most Recent Project <yellowtext>Two Trees</yellowtext>
+        </h2>
+        <div>
+          <a href="https://stg-twotrees-staging.kinsta.cloud/">
+            <img src={twoTreesBanner} alt="two-trees-banner" />
+          </a>
+          <p>
+            Website built for client using WordPress CMS and PHP to allow
+            website admins to create dynamic experiences in a low/no-code
+            environment{" "}
+          </p>
+          <a
+            className="follow"
+            href="https://stg-twotrees-staging.kinsta.cloud/"
+          >
+            <yellowtext>Click to follow</yellowtext>
+          </a>
+        </div>
+      </div>
       <Container>
         <Row>
           <Col size={12}>
             <div>
-              <h2>Projects</h2>
+              <h2>Favorite Projects</h2>
               <p className="project-text">
                 Below are some of my favorite projects that illustrate my skills
                 through code, composition, and design.{" "}
@@ -275,8 +301,8 @@ export const Projects = () => {
                           <p> Figma </p>
                         </div>
                         <div>
-                          <img src={flare} alt="flare" />
-                          <p> Madcap Flare </p>
+                          <img src={wordpress} alt="wordpress" />
+                          <p> Wordpress </p>
                         </div>
 
                         <div>
@@ -303,8 +329,8 @@ export const Projects = () => {
                         </div>
 
                         <div>
-                          <img src={xml} alt="xml" />
-                          <p> xml </p>
+                          <img src={docker} alt="docker" />
+                          <p> Docker </p>
                         </div>
                         <div>
                           <img src={vscode} alt="vscode" />

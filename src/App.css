@@ -390,6 +390,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 
+/* Most Recent */
+.recent {
+  margin-bottom: 4rem;
+}
+.recent img {
+  margin-top: 2rem;
+  width: 80%;
+  border-radius: 25px;
+  display: flex;
+  justify-self: center;
+}
+.recent img:hover {
+  transform: scale(1.05);
+  transition: ease-in 0.2s;
+}
+.recent p {
+  padding-top: 1rem;
+}
+.recent .follow {
+  display: flex;
+  justify-self: center;
+  /* padding-top: 1rem; */
+  font-size: large;
+  text-decoration: none;
+}
+
+.recent a:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
+}
+
+@media screen and (min-width: 1400px) {
+  .recent img {
+    width: 50%;
+  }
+}
+
 /*Projects*/
 .projects {
   background: linear-gradient(rgba(0, 0, 0, 70%), rgba(0, 0, 0, 70%)),
