@@ -85,30 +85,37 @@ export const Projects = () => {
 
   return (
     <section className="projects" id="projects">
-      <div className="recent">
-        <h2>
-          Most Recent Project <yellowtext>Two Trees</yellowtext>
-        </h2>
-        <div>
-          <a href="https://stg-twotrees-staging.kinsta.cloud/">
-            <img src={twoTreesBanner} alt="two-trees-banner" />
-          </a>
-          <p>
-            Website built for client using WordPress CMS and PHP to allow
-            website admins to create dynamic experiences in a low/no-code
-            environment{" "}
-          </p>
-          <a
-            className="follow"
-            href="https://stg-twotrees-staging.kinsta.cloud/"
-          >
-            <yellowtext>Click to follow</yellowtext>
-          </a>
-        </div>
-      </div>
       <Container>
         <Row>
           <Col size={12}>
+            {/* 
+          
+          
+          */}
+            <div className="recent">
+              <h2>
+                Most Recent Project &nbsp;<yellowtext>Two Trees</yellowtext>
+              </h2>
+              <div>
+                <a href="https://stg-twotrees-staging.kinsta.cloud/">
+                  <img src={twoTreesBanner} alt="two-trees-banner" />
+                </a>
+                <p>
+                  Site built for client using PHP and WordPress CMS to allow web
+                  admins to create dynamic experiences in a low/no-code
+                  environment{" "}
+                </p>{" "}
+                <p className="follow">
+                  <a href="https://stg-twotrees-staging.kinsta.cloud/">
+                    <yellowtext>Click to follow</yellowtext>
+                  </a>
+                </p>
+              </div>
+            </div>
+            {/* 
+            
+            
+            */}
             <div>
               <h2>Favorite Projects</h2>
               <p className="project-text">
